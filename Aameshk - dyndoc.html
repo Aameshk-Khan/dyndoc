@@ -1,0 +1,66 @@
+<div style="text-align: center;">
+   <span style="color: black; font-size: 30px; font-weight: bold; background-color: #2980B9;">How to create a Word Document or HTML Webpage in Stata using Markdown</span> 
+</div>
+</div>
+<div style="text-align:justify;">  
+<p><em>dyndoc</em>, a powerful Stata command, converts text file with Markdown code, Stata commands with dynamic tags, and some HTML tags into a formatted HTML file or Word document with embedded Stata output. The following sections provide an overview of <em>dyndoc</em>, its key components and benefits, and best practices for creating and using dyndoc effectively.</p>
+<p><span style="color: #2980B9;"><strong>What is <em>dyndoc</em>?</strong></span></p>
+<p><em>dyndoc</em> is designed to convert a text file with Markdown text and Stata commands into a formatted HTML file or Word document. This conversion process is driven by dynamic tags, which indicate how commands, output, results of expressions, and graphs should be inserted into the HTML file/document. By using <em>dyndoc</em>, you can seamlessly combine narrative text with dynamic, up-to-date analysis results in a single, well-formatted HTML file/document.</p>
+<p><span style="color: #2980B9;"><strong>Key Components:</strong></span></p>
+<style>
+  .list-item {
+    margin-bottom: 10px; /* Adjust the value as needed for the desired spacing */
+  }
+</style>
+<ol type = "I">
+<div class="list-item">
+<li><b>Markdown:</b> Markdown is a lightweight markup language that uses plain text formatting syntax. It is widely used for creating formatted text using a plain-text editor. Markdown can easily be converted to HTML or Word document, making it a versatile choice for writing documentation, notes, and technical content. In <i>dyndoc</i>, Markdown syntax is used to add structure and formatting to the HTML file/document, such as headings, subheadings, bold and italic text, text boxes, and bulleted lists.</li> 
+</div>
+<div class="list-item">
+<li><b>Dynamic Tags:</b> Dynamic tags are special markers within the text file that indicate how Stata commands and their output should be processed and displayed. These tags enable the interleaving of code and text, ensuring that the HTML file/document is always synchronized with the latest data and analysis.</li> 
+</div>
+<div class="list-item">
+<li><b>HTML Tags:</b> While Markdown covers most formatting needs, HTML tags can be used within <i>dyndoc</i> to enhance the HTML file's/document's appearance and functionality. HTML provides additional control over styling, layout, and interactive elements, allowing for greater customization.</li> 
+</div>
+</ol> 
+<p><span style="color: #2980B9;"><strong>How <em>dyndoc</em> works:</strong></span> <ol type = "1"> <div class="list-item"></p>
+<li><b>Preparation:</b> Start by writing a text file that combines Markdown text with Stata commands wrapped in dynamic tags. This file serves as the source for the final HTML file/document.</li> 
+</div>
+<div class="list-item">
+<li><b>Execution:</b> Use the <i>dyndoc</i> command in Stata to process the file and generate the output. When <i>dyndoc</i> processes the file, it interprets the Markdown syntax to format the text and executes the Stata commands embedded within dynamic tags. The results of these commands, such as statistical output and graphs, are then inserted into the appropriate places in the HTML file/document.</li>
+</div>
+<figure>
+    <img src="dyndoc.png" alt="tab1" width="350"/>
+</figure> 
+<div class="list-item">
+<li><b>Output:</b> The processed content is converted into a well-formatted HTML file or Word document. This output file includes all the formatted text, tables, graphs, and other elements specified in the original text file.</li>
+</div>
+</ol> 
+<p><span style="color: #2980B9;"><strong>Key Benefits:</strong></span> <ol type = "1"> <div class="list-item"></p>
+<li><b>Reproducibility:</b>  By encapsulating both code and narrative within a single document, <i>dyndoc</i> facilitates reproducible research. Any modifications to the underlying data or code can be easily reflected in the final output upon regeneration of the document.</li>
+</div>
+<div class="list-item">
+<li><b>Efficiency:</b>  The elimination of manual copying and pasting of output results in increased efficiency and reduced risk of errors. With code execution embedded within the document, there is no need for maintaining parallel do-files, streamlining the analysis process.</li>
+</div>
+<div class="list-item">
+<li><b>Flexibility:</b>  <i>dyndoc</i> documents offer flexibility in content creation, allowing for the inclusion of formatted text, code snippets, output tables, graphs, and annotations. This versatility enables researchers to tailor documents to specific project requirements and audience preferences.</li>
+</div>
+</ol> 
+<p><span style="color: #2980B9;"><strong>Best Practices for using <em>dyndoc</em>:</strong></span></p>
+<ol type = "1">
+<div class="list-item"> 
+<li><b>Organize Your Document:</b>  Utilize Markdown or HTML headings to add clear headings, sections, and bulleted or numbered lists to structure your document logically.</li>
+</div>
+<div class="list-item">
+<li><b>Comment Your Code:</b>  Add comments within your Stata code chunks to provide context and explanations for complex analyses.</li>
+</div>
+<div class="list-item">
+<li><b>Use Version Control:</b>  Utilize version control systems, such as Git, to track changes and collaborate effectively with team members.</li> 
+</div>
+<div class="list-item">
+<li><b>Update Regularly:</b>  Regularly update your generated documents by re-running <i>dyndoc</i> command to reflect any changes in data or analysis procedures.</li>
+</div>
+</ol> 
+<p><span style="color: #2980B9;"><strong>Conclusion</strong></span></p>
+<p><em>dyndoc</em> is a powerful tool that brings together the simplicity of Markdown, the analytical power of Stata, and the versatility of HTML, enabling users to create dynamic, reproducible, and well-formatted documents with ease. Embracing <em>dyndoc</em> can enhance collaboration, streamline workflows, and elevate the transparency and reproducibility of research endeavors.</p>
+</div>
